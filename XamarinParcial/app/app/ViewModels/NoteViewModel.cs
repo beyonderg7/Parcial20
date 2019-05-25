@@ -1,7 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace app.ViewModels
@@ -13,6 +11,7 @@ namespace app.ViewModels
         string nota;
         bool isrunning;
 
+        
         #endregion
 
 

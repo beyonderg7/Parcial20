@@ -1,11 +1,5 @@
 ﻿namespace app.ViewModels
 {
-
-
-    // using Models;
-    using System;
-    using System.Collections.ObjectModel;
-
     public class MainViewModel
     {
         #region Properties
@@ -14,14 +8,14 @@
         #endregion
 
         #region ViewModels
-        public NoteViewModel nota { get; }
+        public NoteViewModel Login { get; }
         #endregion
 
         #region Constructors
         public MainViewModel()
         {
             instance = this;
-            this.nota = new NoteViewModel();
+            this.Login = new NoteViewModel();
         }
         #endregion
 
