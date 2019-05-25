@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             x:Class="app.Views.NotePage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout
+                Padding="10"
+                BackgroundColor="Aqua">
+
+                <Image
+                    
+                   Source="">
+
+                </Image>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Nota"
+                        TextColor="Black">
+
+                    </Label>
+
+                    <Entry
+                        
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="{Binding Nota,Mode=TwoWay}"
+                        Placeholder="Ingrese la nueva nota">
+
+                    </Entry>
+
+                </Grid>
+
+                <ActivityIndicator
+                    IsRunning="{Binding IsRunning}"
+                    >
+
+
+                </ActivityIndicator>
+                <Button
+                    
+                    BackgroundColor="Navy"
+                    Text="Enviar Nota"
+                    Command="{Binding NotaCommand,Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabled}"
+                    TextColor="Orange" >
+
+                </Button>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
