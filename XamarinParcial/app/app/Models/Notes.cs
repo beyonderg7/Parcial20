@@ -1,5 +1,5 @@
 ﻿
-namespace NotesBE.Models
+namespace App.Models
 {
     using System;
 

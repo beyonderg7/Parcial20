@@ -11,6 +11,7 @@ namespace app.ViewModels
 
         #region variables
         string nota;
+        bool isrunning;
 
         #endregion
 
@@ -34,6 +35,12 @@ namespace app.ViewModels
             }
         }
 
+        public bool IsRunning
+        {
+
+            get { return this.isrunning; }
+            set { SetValue(ref this.isrunning, value); }
+        }
 
         #endregion
 
@@ -56,7 +63,7 @@ namespace app.ViewModels
             if (String.IsNullOrEmpty(Nota))
             {
 
-                await App.Current.MainPage.DisplayAlert("Email empty", "Ponga email", "Accept");
+                await App.Current.MainPage.DisplayAlert("Nota vacia", "Escriba una nota", "Aceptar");
 
                 return;
 

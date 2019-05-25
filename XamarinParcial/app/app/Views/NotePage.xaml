@@ -28,7 +28,7 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         Text="Nota"
-                        TextColor="Black">
+                        TextColor="Red">
 
                     </Label>
 
@@ -44,11 +44,10 @@
                 </Grid>
 
                 <ActivityIndicator
-                    IsRunning="{Binding IsRunning}"
-                    >
-
+                    IsRunning="{Binding IsRunning}">
 
                 </ActivityIndicator>
+                
                 <Button
                     
                     BackgroundColor="Navy"
